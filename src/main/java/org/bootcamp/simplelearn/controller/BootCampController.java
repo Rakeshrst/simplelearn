@@ -68,7 +68,7 @@ public class BootCampController {
 		return ResponseEntity.created(uri).build();
 	}
 	
-	@PostMapping("/instructor/{id}/addsubordinate/{subordinate_id}")
+	@PostMapping("/instructor/{id}/subordinate/{subordinate_id}")
 	public ResponseEntity<Void> addSubordinate(@PathVariable int id,@PathVariable int subordinate_id) {
 
 		Instructor instructor= instructorService.getInstructorDetails(id);
